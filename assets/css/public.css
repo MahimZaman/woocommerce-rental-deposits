@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.wcrd-orders {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wcrd-single-order {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.wcrd-order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.status-completed {
+  background: #e6f7ee;
+  color: #1a7f4b;
+}
+.status-processing {
+  background: #fff4e5;
+  color: #b26a00;
+}
+
+.wcrd-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+}
+
+.wcrd-item-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.wcrd-thumb img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.wcrd-meta h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.wcrd-meta p {
+  margin: 0;
+  font-size: 12px;
+  color: #777;
+}
+
+.wcrd-item-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.wcrd-dispute-btn {
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.wcrd-dispute-btn:hover {
+  background: #d9363e;
+}
+
+#wcrd-stripe-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#wcrd-stripe-spinner.hidden {
+  display: none;
+}
+
+.wcrd-loader {
+  width: 24px;
+  height: 24px;
+  border: 2px solid currentColor;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button#wcrd-connect-stripe {
+  color: #fff;
+  font-family: "Manrope";
+  line-height: 1.5;
+  padding: 10px 24px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
